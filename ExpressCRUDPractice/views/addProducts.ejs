@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products</title>
+    <style>
+        div{
+            padding : 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>
+                Hello, <%= user %>
+            </h1>
+            <h3>
+                Fill the bellow form to add the data !! 
+            </h3>
+        </header>
+        <div>
+            <form action="addingProducts" method="post">
+                <div>
+                    <label for="name">Enter Product Name : </label>
+                    <input type="text" name="pname" id="pname" required>
+                </div>
+                <div>
+                    <label for="quantity">Enter Product Quantity : </label>
+                    <input type="number" name="quantity" id="quantity" required>
+                </div>
+                <div>
+                    <button type="submit">Add Product</button>
+                </div>
+            </form>
+            <a href="showData"><button type="button" id="btn" name="btn" value="back">Go back</button></a>
+        </div>
+    </center>
+</body>
+</html>

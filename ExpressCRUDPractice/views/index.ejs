@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>
+                Login Successfull!! <br>
+                Welcome <% if (prodarr && prodarr[0]) { %> <%= prodarr[0].Name %> <% } %> <br>
+            </h1>
+            <hr>
+        </header>
+        <div style="padding: 20px;">
+            <a href="showData"><button type="button" id="btn" name="=btn" value="show">Go To Cart</button></a>
+        </div>
+    </center>
+</body>
+</html>

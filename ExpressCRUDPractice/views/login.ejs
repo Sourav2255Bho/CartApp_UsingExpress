@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>
+                Welcome to My App
+            </h1>
+        </header>
+        <hr>
+        <div id="container">
+            <form action="validate-user" method="post">
+                <div>
+                    <label for="uname">Enter Username : </label>
+                    <input type="text" name="uname" id="uname" required>
+                </div>
+                <div>
+                    <label for="pass">Enter Password : </label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+            </form><br>
+            <h4>Are you a new user ? </h4>
+            <a href="register"><button type="button" id="btn" name="btn" value="register">Register</button></a>
+        </div>
+    </center>
+    
+</body>
+</html>

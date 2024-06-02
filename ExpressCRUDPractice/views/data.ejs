@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Store</title>
+    <style>
+        div{
+            padding : 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>
+                Hello <%=prodarr[0].Name%> <br>
+            </h1>
+            <h3>
+                Bellow table has your products
+            </h3>
+        </header>
+        <div id="container">
+            <table border="3">
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+                <%for (var i = 0; i<prodarr.length ; i++){%>
+                    <tr>
+                        <td><%=prodarr[i].Pid%></td>
+                        <td><%=prodarr[i].Pname%></td>
+                        <td><%=prodarr[i].Quantity%></td>
+                        <td>
+                            <a href="deleteproduct/<%=prodarr[i].Pid%>">delete</a>/
+                            <a href="editproduct/<%=prodarr[i].Pid%>">edit</a>
+                        </td>
+                    </tr>
+                    <%}%>
+            </table>
+        </div>
+        <div>
+            <form action="addproduct" method="get">
+                <button type="submit" name="btn" id="btn" value="add">Add New Product</button>
+            </form>
+            <form action="logout" method="get">
+                <button type="submit" name="btn" id="btn" value="logout">Logout</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

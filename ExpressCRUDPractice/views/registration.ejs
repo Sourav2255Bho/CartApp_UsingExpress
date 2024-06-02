@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Ragistration</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Welcome !!</h1>
+            <h3>Fill The Below Form To Register</h3>
+        </header>
+        <hr>
+        <div id="container">
+            <form action="register-user" method="post">
+                <div>
+                    <label for="uname">Enter your full name : </label>
+                    <input type="text" name="uname" id="uname" required>
+                </div>
+                <div>
+                    <label for="user">Enter Login Name : </label>
+                    <input type="text" name="user" id="user" required>
+                </div>
+                <div>
+                    <label for="pass">Enter new password : </label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+                <div>
+                    <button type="submit" name="btn" id="btn" value="register">Register</button>
+                    <a href="login"><button type="button" id="btn" name="btn" value="back">Go back</button></a>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
